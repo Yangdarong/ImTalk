@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.yxr.imtalk.activity.FriendsActivity">
+
+    <item
+        android:id="@+id/fist"
+        android:title="第一个Menu"
+        ></item>
+
+    <item
+        android:id="@+id/second"
+        android:title="第二个Menu"
+        ></item>
+
+    <item
+        android:id="@+id/third"
+        android:title="第三个Menu">
+
+    </item>
+</menu>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/while_blue"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/grop_imageview_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="start"
+        android:src="@drawable/em_groups_icon"
+        />
+
+    <TextView
+        android:id="@+id/group_textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/grop_imageview_icon"
+        android:layout_toEndOf="@+id/grop_imageview_icon"
+        android:layout_toRightOf="@+id/grop_imageview_icon"
+
+        android:text="12"
+        android:textColor="#000000"
+        />
+
+    <ImageView
+        android:id="@+id/friend_child_imageview_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/grop_imageview_icon"
+        android:layout_alignEnd="@+id/grop_imageview_icon"
+        android:layout_alignRight="@+id/grop_imageview_icon"
+        android:src="@mipmap/status_online"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/group_textView_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/group_textView_name"
+        android:layout_alignStart="@+id/group_textView_name"
+        android:layout_alignBottom="@+id/friend_child_imageview_status"
+        android:text="在线"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/group_textView_occu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="在线人数" />
+
+
+</RelativeLayout>

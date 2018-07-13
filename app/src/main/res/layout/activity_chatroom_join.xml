@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ChatRoomJoinActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/title">
+
+        <LinearLayout
+            android:id="@+id/create_layout_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="closeActivity"
+
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/web_bar_back_press"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp" />
+
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="加入群"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:id="@+id/change_password_layout_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:onClick="join"
+
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:text="加 入"
+                android:textColor="@android:color/white"
+
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/et_name1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_login_edittext"
+        android:drawableLeft="@drawable/em_dx_checkbox_on"
+        android:maxLength="16"
+        android:hint="请输入群ID"
+        android:padding="10dp" />
+
+
+    <EditText
+        android:id="@+id/et_password1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_login_edittext"
+        android:drawableLeft="@drawable/em_dx_checkbox_on"
+        android:maxLength="16"
+        android:hint="请输入群密码"
+        android:padding="10dp" />
+
+</LinearLayout>

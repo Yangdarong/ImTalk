@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/title">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:text="注 册"
+            android:textSize="18dp" />
+
+
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/register_editText_user"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_login_edittext"
+        android:drawableLeft="@mipmap/denglu_tb1"
+        android:hint="请输入账号"
+        android:maxLength="11"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/register_editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_login_edittext"
+        android:drawableLeft="@mipmap/denglu_tb2"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:lines="1"
+        android:padding="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/register_textview_enter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+
+            android:background="#F00"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="注 册"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+
+    </RelativeLayout>
+</LinearLayout>
